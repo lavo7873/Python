@@ -79,3 +79,30 @@ turnRight(60);
 moveForward(100);
 turnRight(120);
 moveForward(100);
+
+# 11) di chuyển hình vuông 3 D
+for (var count = 0; count < 3; count++) {
+  penColour(colour_random());
+  turnLeft(60);
+  moveForward(100);
+  turnRight(120);
+  moveForward(100);
+  turnRight(60);
+  moveForward(100);
+  turnRight(120);
+  moveForward(100);
+}
+
+# 12) di chuyển thành hình vuông 3D tròng vào nhau;
+for (var count = 0; count < 9; count++) {
+  penColour(colour_random());
+  turnLeft(60);
+  moveForward(100);
+  turnRight(120);
+  moveForward(100);
+  turnRight(60);
+  moveForward(100);
+  turnRight(120);
+  moveForward(100);
+  turnRight(90);
+}
