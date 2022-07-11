@@ -177,44 +177,79 @@ t.end_fill()
 #set up for sun
 t.penup()
 t.right(90)
-t.forward(300)
+t.forward(200)
+t.pendown()
 
 #sun
+t.fillcolor('yellow')
+t.begin_fill()
+t.circle(60)
+t.end_fill()
+t.right(90)
+t.forward(80)
+t.backward(80)
 
-# set parameters
-Width = 700
-Height =700
-T = "SUN"
-# open window
-t.open_window(Width, Height, Title)
-  
-# Set the background color
-t.set_background_color(t.csscolor.BLUE)
-  
-# Get ready to draw
-t.start_render()
-  
-# Draw a sun
-t.draw_circle_filled(500, 550, 40, t.color.YELLOW)
-  
-# Rays to the left, right, up, and down
-t.draw_line(500, 550, 400, 550, t.color.YELLOW, 3)
-t.draw_line(500, 550, 600, 550, t.color.YELLOW, 3)
-t.draw_line(500, 550, 500, 450, t.color.YELLOW, 3)
-t.draw_line(500, 550, 500, 650, t.color.YELLOW, 3)
-  
-# Diagona
-t.draw_line(500, 550, 550, 600, t.color.YELLOW, 3)
-t.draw_line(500, 550, 550, 500, t.color.YELLOW, 3)
-t.draw_line(500, 550, 450, 600, t.color.YELLOW, 3)
-t.draw_line(500, 550, 450, 500, t.color.YELLOW, 3)
-  
-# Finish drawing
-t.finish_render()
+t.penup()
+t.backward(120)
+t.pendown()
 
+t.backward(80)
 
+t.penup()
+t.forward(80)
+t.pendown()
 
+t.penup()
+t.right(90)
+t.forward(60)
+t.left(90)
+t.forward(60)
+t.pendown()
 
+t.right(90)
+t.forward(80)
+
+t.penup()
+t.backward(200)
+t.pendown()
+
+t.backward(80)
+
+t.penup()
+t.forward(80)
+t.right(90)
+t.forward(50)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(10)
+t.left(140)
+t.forward(5)
+t.pendown()
+
+t.forward(60)
+
+t.penup()
+t.backward(179)
+t.pendown()
+
+t.backward(60)
+
+t.penup()
+t.forward(60)
+t.right(40)
+t.forward(70)
+t.right(50)
+t.forward(10)
+t.pendown()
+
+t.forward(60)
+
+t.penup()
+t.backward(179)
+t.pendown()
+
+t.backward(60)
 
 
 
