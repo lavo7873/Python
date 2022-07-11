@@ -1,5 +1,5 @@
 # import module
-import arcade
+import ar
   
 # set parameters 
 Width= 700
