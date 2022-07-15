@@ -1,10 +1,14 @@
 import turtle
- 
-t = turtle.Turtle()
-side = 200
-for i in range(4):
-   t.forward(side)
-   t.right(90) #Exterior angle of a square is 90 degree
 
+colors = ['blue','red','green',]
+
+t = turtle.Pen()
+
+
+for x in range(360):
+   t.pencolor(colors[x%2])
+   t.width(x//100 + 1)
+   t.forward(x)
+   t.left(90)
 
 turtle.done()
