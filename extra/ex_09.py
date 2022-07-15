@@ -58,6 +58,9 @@ draw_pie(bob, 5, size)
 draw_pie(bob, 6, size)
 draw_pie(bob, 7, size)
 draw_pie(bob, 8, size)
+draw_pie(bob, 9, size)
 
 bob.hideturtle()
 turtle.mainloop()
+
+turtle.done()
