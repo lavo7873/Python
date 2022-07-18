@@ -1,3 +1,6 @@
+from turtle import left
+
+
 ten1 = input("Tên học viên 1: ")
 tuoi1 = int (input("Tuổi học viên 1:"))
 
@@ -10,3 +13,4 @@ tuoi3 = int (input("Tuổi học viên 3:"))
 aver = (tuoi1 + tuoi2 + tuoi3)/3
 
 print(f"Tên học viên: {ten1}. Aver: {aver:.4f}")
+
