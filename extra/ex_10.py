@@ -1,0 +1,1 @@
+print('Xin Chao\n'*3)
