@@ -13,5 +13,6 @@ turtle.done()
 c = 2 * math.pi * r
 s = math.pi *r*r
 
-print("Chu Vi ")
+print("Chu Vi Của hình tròn có bán kính = {r} là {c}".format(r=r, c=c))
+print("Diện Tích của hình tròn có bán kính = {r} là {s}".format(s=s, r=r))
 
