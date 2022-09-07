@@ -1,9 +1,7 @@
-# import everything from tkinter module
 from tkinter import *
 
 # globally declare the expression variable
 expression = ""
-
 
 # Function to update expression
 # in the text entry box
@@ -73,13 +71,14 @@ if __name__ == "__main__":
     # grid method is used for placing
     # the widgets at respective positions
     # in table like structure .
+    #ipadx means size of box answer
     expression_field.grid(columnspan=4, ipadx=70)
 
     # create a Buttons and place at a particular
     # location inside the root window .
     # when user press the button, the command or
     # function affiliated to that button is executed .
-    button1 = Button(gui, text=' 1 ', fg='black', bg='white',
+    button1 = Button(gui, text=' 1 ', fg='black', bg='white', 
                      command=lambda: press(1), height=1, width=7)
     button1.grid(row=2, column=0)
 
@@ -146,5 +145,6 @@ if __name__ == "__main__":
     Decimal = Button(gui, text='.', fg='black', bg='white',
                      command=lambda: press('.'), height=1, width=7)
     Decimal.grid(row=6, column=0)
-    # start the GUI
+
+      # complete with this tasks
     gui.mainloop()
