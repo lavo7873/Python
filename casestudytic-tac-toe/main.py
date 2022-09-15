@@ -14,14 +14,14 @@ class Move(NamedTuple):
 
 BOARD_SIZE = 3
 DEFAULT_PLAYERS = (
-    Player(label="X", color="blue"),
+    Player(label="X", color="black"),
     Player(label="O", color="green"),
 )
 
 class TicTacToeGame:
     def __init__(self, players=DEFAULT_PLAYERS, board_size=BOARD_SIZE):
         self._players = cycle(players)
-        self.board_size = board_size
+        self.board_size = board_size 
         self.current_player = next(self._players)
         self.winner_combo = []
         self._current_moves = []
@@ -128,7 +128,8 @@ class TicTacToeBoard(tk.Tk):
                 button = tk.Button(
                     master=grid_frame,
                     text="",
-                    font=font.Font(size=36, weight="bold"),
+                    #create side box play
+                    font=font.Font(size=10, weight="bold"),
                     fg="black",
                     width=3,
                     height=2,
