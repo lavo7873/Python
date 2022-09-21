@@ -92,7 +92,7 @@ class TicTacToeGame:
 class TicTacToeBoard(tk.Tk):
     def __init__(self, game):
         super().__init__()
-        self.title("Tic-Tac-Toe Game")
+        self.title("Cờ Caro")
         self._cells = {}
         self._game = game
         self._create_menu()
@@ -113,7 +113,7 @@ class TicTacToeBoard(tk.Tk):
         display_frame.pack(fill=tk.X)
         self.display = tk.Label(
             master=display_frame,
-            text="Ready?",
+            text="Bắt Đầu",
             font=font.Font(size=28, weight="bold"),
         )
         self.display.pack()
@@ -131,8 +131,8 @@ class TicTacToeBoard(tk.Tk):
                     #create side box play
                     font=font.Font(size=10, weight="bold"),
                     fg="black",
-                    width=3,
-                    height=2,
+                    width=8,
+                    height=4,
                     highlightbackground="lightblue",
                 )
                 self._cells[button] = (row, col)
@@ -175,7 +175,7 @@ class TicTacToeBoard(tk.Tk):
     def reset_board(self):
         """Reset the game's board to play again."""
         self._game.reset_game()
-        self._update_display(msg="Ready?")
+        self._update_display(msg="Bắt Đầu   ")
         for button in self._cells.keys():
             button.config(highlightbackground="lightblue")
             button.config(text="")
