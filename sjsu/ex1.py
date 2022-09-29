@@ -2,6 +2,8 @@
 # Class : Cmpe_120
 
 #exercise 1 :
+
+
 letter1 = str(input("Input the letter you want to change :"))
 def uppercase(letter1):
     return letter1.upper()
@@ -22,9 +24,9 @@ def is_alphabet(letter3):
 print(is_alphabet(letter3))
 
 #exercise 4:
-str = input("Enter any value: ")
- 
-if str.isdigit():
+l_str = input("Enter any value: ")
+any word and a b c d _
+if l_str.isdigit():
     print("This is integral")
 else:
     print("This is string ")
